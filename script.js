@@ -5,24 +5,24 @@ const generateBtn = document.querySelector("#generate");
 const lowerChar = 'abcdefghijklmnopqrstuvwxyz'
 const upperChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const numberChar = '0123456789'
-const specialChar = `!"#$%&'()*+,-./:;<=>?@[]^_{}|~`
+const specialChar = `!#$%&'()*+,-./:;<=>?@[]^_{}|~`
 
 // User input event, parameters.
 
 function generatePassword() {
-  const passLength = parseInt(prompt("Please pick a password length greater than 8 characters and less than 128 characters."))
+  const passLength = parseInt(prompt("Please choose a password length greater than 8 characters and less than 128 characters."))
 
   // Password length check
   if (passLength < 8 || passLength > 128) {
-    alert("Please choose a password length between 8 and 128 characters!")
+    alert("Your password length must be at least 8 characters and no more than 128 characters! Please choose a password length again.")
     generatePassword()
   }
 
   // Asks user to confirm each character set included in password generation.
-  const lowC = confirm('Would you like to include lowercase characters?')
-  const upC = confirm('Would you like to include uppercase characters?')
-  const numC = confirm('Would you like to include numbers?')
-  const specC = confirm('Would you like to include special characters?')
+  const lowC = confirm(`Would you like to include lowercase characters? Please click OK for yes or click Cancel for no.`)
+  const upC = confirm(`Would you like to include uppercase characters? Please click OK for yes or click Cancel for no.`)
+  const numC = confirm(`Would you like to include numbers? Please click OK for yes or click Cancel for no.`)
+  const specC = confirm(`Would you like to include special characters? Please click OK for yes or click Cancel for no.`)
 
   let passHolder = ' '
   let newPass = ' '
