@@ -10,7 +10,7 @@ const specialChar = `!#$%&'()*+,-./:;<=>?@[]^_{}|~`
 // User input event, parameters.
 
 function generatePassword() {
-  const passLength = parseInt(prompt("Please choose a password length greater than 8 characters and less than 128 characters."))
+  const passLength = parseInt(prompt("Please choose a password length that is at least 8 characters and no more than 128 characters."))
 
   // Password length check
   if (passLength < 8 || passLength > 128) {
