@@ -5,7 +5,7 @@ const generateBtn = document.querySelector("#generate");
 const lowerChar = 'abcdefghijklmnopqrstuvwxyz'
 const upperChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const numberChar = '0123456789'
-const specialChar = `!#$%&'()*+,-./:;<=>?@[]^_{}|~`
+const specialChar = `!#$%&')(*+,-./:;<=>?@][^}{|~`
 
 // User input event, parameters.
 
