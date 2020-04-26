@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #7ee2e6;
+  background-color: #0889a0de;
 }
 
 .wrapper {
@@ -27,15 +27,15 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsla(213, 16%, 25%, 0.979);
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsla(222, 7%, 37%, 0.918);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsla(206, 20%, 93%, 0.973);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
